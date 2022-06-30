@@ -1,0 +1,213 @@
+
+
+
+*{
+  font-family: montserrat;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+.logo{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 15px;
+  margin-top:30px;
+  font-size:40px;
+  color:red;
+  font-family: belgrano;
+  text-shadow: 1px 1px white;
+  font-style: bold;
+  margin-right: 350px;
+  
+}
+
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom:20px;
+  margin-top:40px;
+}
+
+li a:hover {
+  color:red;
+  font-style: italic;
+  font-family: belgrano;
+  text-decoration: underline;
+}
+
+li button {
+  
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top:25px;
+  margin-bottom:20px;
+  width:100px;
+  height:45px;
+}
+
+li button:hover {
+  color:black;
+  text-decoration: underline;
+  font-style:italic;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.photo_carousel{
+  font-size:100px;
+  color:white;
+  font-style:bold;
+  position:top;
+  text-align:left;
+  left:0px;
+  text-decoration:underline;
+  text-shadow: 5px 5px red;
+}
+
+.btn_CV{
+    background-color:red;
+    color:white;
+    font-size:35px;
+    margin-top:50px;
+    margin-bottom:30px;
+    border-radius:350px;
+    text-align:center;
+
+   } 
+
+ .btn_CV:hover{
+  background-color:blue;
+  color:yellow;
+  text-decoration: underline;
+  font-style:italic;
+
+}
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 650px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+#head_photo{
+  font-size:25px;
+  text-decoration:underline;
+  color:white;
+  margin-bottom:30px;
+  text-align:center;
+}
+
+.lorem_data{
+  font-size:18px;
+
+}
+
+#know_more{
+  text-align:center;
+  font-size:18px;
+  color:red;
+  font-style:bold;
+  text-decoration:underline;
+}
+
+#know_more:hover{
+  color:blue;
+  font-style:italic;
+  text-align:center;
+

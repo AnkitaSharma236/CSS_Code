@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title> Ankita Sharma - Photography Portfolio Website </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style css.css" rel="stylesheet">
+</head>
+<body>
+     <header>
+
+     	<!--Navigation Bar-->
+         <nav>
+         	<div>
+             <ul>
+                <li><img src = "nav1.png"></li>
+                <li class="logo">ANKITA SHARMA</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><button style="background-color: red";>Register</button></li>
+             </ul>
+            </div>
+         </nav>
+      </header>
+
+
+
+<!-- Carousel -->
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="car1.jpg" style="width:100%" "opacity:0.8";>
+  <div class="text">
+    <h1 class="photo_carousel">Get the best photography experience here</h1>
+    <button class="btn_CV">Click to download  my CV</button>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <img src="car2.jpg" style="width:100%" "opacity:0.8";>
+  <div class="text">
+    <h1 class="photo_carousel">Get the best photography experience here</h1>
+    <button class="btn_CV">Click to download  my CV</button>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <img src="car3.jpg" style="width:100%" "opacity:0.8";>
+  <div class="text">
+    <h1 class="photo_carousel">Get the best photography experience here</h1>
+    <button class="btn_CV">Click to download  my CV</button>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <img src="car4.jpg" style="width:100%" "opacity:0.8";>
+  <div class="text">
+    <h1 class="photo_carousel">Get the best photography experience here</h1>
+    <button class="btn_CV">Click to download  my CV</button>
+  </div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+<!--Our Services-->
+
+<div class="row">
+  <div class="column" style="background-color:darkturquoise;">
+    <img src="cam1.png" class="img-fluid img-responsive rounded-circle" width="280" height="310" style="margin-bottom:2px" "text-align:center";>
+      <h2 id="head_photo">Professional Photoshoots</h2>
+      <p class="lorem_data">
+      Our photography team provides full-day or half-day shoots with all necessary equipments with professional camera and lens kits, lightning setup.
+      The services also include photo editing, color correction and retouching.
+      We provide our clients with all types of photography such as Corporate team photography, Product photography, Commercial photography, Event photography, Location and architectural photography, Lifestyle photography, Food photography and Social Media photography.
+  </p>
+  <br>
+  <a href="#" id="know_more">Know More</a>
+  </div>
+  <div class="column" style="background-color:darkturquoise">
+    <img src="cam2.png" class="img-fluid img-responsive rounded-circle" width="280" height="300" style="margin-bottom:10px" "text-align:center";>
+      <h2 id="head_photo">Photo Library Hosting</h2>
+      <p class="lorem_data">
+      Our team has extensive experience with remotephoto projects for clients across the world. Whether ou are working from home or at your office, we can remotely guide you through the photography process from pre-planning to the photoshoot itself.Reacch out to our team when you need a multimedia studio that can deliver the creative solutions necessary for your photo projects.
+      Some of our most recent work is featured in our portfolio gallery.
+  </p>
+  <br><br>
+<a href="#" id="know_more" >Know More</a>
+  </div>
+  <div class="column" style="background-color:darkturquoise">
+    <img src="cam3.png" class="img-fluid img-responsive rounded-circle" width="280" height="300" style="margin-bottom:9px" "text-align:center";>
+      <h2 id="head_photo">Customized Photos at Decent Prices</h2>
+      <p class="lorem_data">
+      Our team provides custom photos which are customized as per the user's needs and desires. If the situation doesn't call for your own branding or personality and a generic shot will serve the purpose, stock photos can be used to save time and budget. Our team has a great eye for other people's work, and can do stock photo searches for clients to make the most of what's available. Whether it is custom shoots or ninja-like stock searches, our team has got you photography needs covered.
+  </p>
+  <br>
+<a href="#" id="know_more">Know More</a>
+  </div>
+</div>
+	   
+	<!--Footer-->
+
+	<footer>
+		<div>
+			<div>
+				<ul>
+					<li ><a href="#" style="margin-right:200px";>Terms and Conditions</a></li>
+					<li ><a href="#" style="margin-right:200px";>Copyright &copy; Ankita Sharma 2022. All Rights Reserved</a></li>
+					<li ><a href="#">Privacy Policy</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
